@@ -1,0 +1,712 @@
+/*
+ * Reset styles for any element that may be used to display an icon (including
+ * overrides of legacy CSS).
+ */
+ .Icon {
+    background: transparent;
+    display: inline-block;
+    font-style: normal;
+    vertical-align: baseline;
+    position: relative;
+  }
+  /**
+   * A pseudo-element is used to display the icon's glyph. If an icon needs to be
+   * "stacked" to achieve multiple colors you may use both :before and :after
+   * psuedo-elements.
+   */
+  .Icon:after,
+  .Icon:before {
+    display: block;
+    font-family: 'edgeicons';
+    font-weight: normal;
+    font-style: normal;
+    text-align: center;
+    /* Make sure we get the best rendering for the icons on webkit */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  /**
+   * Icon sizes & spacing
+   */
+  .Icon--smallest {
+    font-size: 0.6rem;
+    line-height: 0.6rem;
+  }
+  .Icon--small {
+    font-size: 0.8rem;
+    line-height: 0.75rem;
+  }
+  .Icon--medium {
+    font-size: 0.9rem;
+    line-height: 0.9rem;
+  }
+  .Icon--large {
+    font-size: 1.05rem;
+    line-height: 1;
+  }
+  .Icon--extraLarge {
+    font-size: 1.6rem;
+    line-height: 1;
+  }
+  /**
+   * Individual icons
+   * Keep this list alphabetized
+   */
+  .Icon--add:before {
+    content: "\f183";
+  }
+  .Icon--addLight:before {
+    content: "\f198";
+  }
+  /* Lighter version of the add icon */
+  .Icon--analytics:before {
+    content: "\f200";
+  }
+  .Icon--arrowDown:before {
+    content: "\f174";
+  }
+  .Icon--arrowLeft:before {
+    content: "\f114";
+    /*@replace: initial*/
+    transform: scaleX(-1);
+  }
+  .Icon--arrowUp:before {
+    content: "\f188";
+  }
+  .Icon--atSymbol:before {
+    content: "\f050";
+  }
+  .Icon--attachFile:before {
+    content: "\f088";
+  }
+  .Icon--audioBadge:before {
+    content: "\f311";
+  }
+  .Icon--audioMuted:before {
+    content: "\f306";
+  }
+  .Icon--audioUnmuted:before {
+    content: "\f305";
+  }
+  .Icon--balloon:before {
+    content: "\f092";
+  }
+  .Icon--bird:before {
+    content: "\f179";
+  }
+  /* TODO: combine with Icon--logo */
+  .Icon--bookmark:before {
+    content: "\f155";
+  }
+  .Icon--calendar:before {
+    content: "\f203";
+  }
+  .Icon--camera:before {
+    content: "\f027";
+  }
+  .Icon--cameraPlus:before {
+    content: "\f111";
+  }
+  .Icon--cameraVideo:before {
+    content: "\f030";
+  }
+  .Icon--cards:before {
+    content: "\f402";
+  }
+  .Icon--caretDown:before {
+    content: "\f181";
+  }
+  .Icon--caretLeft:before {
+    /*@replace: "\f173"*/
+    content: "\f172";
+  }
+  .Icon--caretLeftLight:before {
+    content: "\f193";
+  }
+  .Icon--caretRight:before {
+    /*@replace: "\f172"*/
+    content: "\f173";
+  }
+  .Icon--caretRightLight:before {
+    content: "\f194";
+  }
+  .Icon--caretUp:before {
+    content: "\f181";
+    transform: scaleY(-1);
+  }
+  .Icon--cart:before {
+    content: "\f095";
+  }
+  .Icon--check:before {
+    content: "\f170";
+  }
+  .Icon--checkLight:before {
+    content: "\f197";
+  }
+  /* Lighter version of the check icon */
+  .Icon--chevronDown:before {
+    content: "\f202";
+  }
+  .Icon--chevronUp:before {
+    content: "\f201";
+  }
+  .Icon--circleActiveAnalytics:before {
+    content: "\f516";
+  }
+  .Icon--circleActiveBird:before {
+    content: "\f520";
+  }
+  .Icon--circleActiveDm:before {
+    content: "\f517";
+  }
+  .Icon--circleActiveHeart:before {
+    content: "\f514";
+  }
+  .Icon--circleActiveList:before {
+    content: "\f518";
+  }
+  .Icon--circleActiveMe:before {
+    content: "\f519";
+  }
+  .Icon--circleActiveMore:before {
+    content: "\f515";
+  }
+  .Icon--circleActiveRetweet:before {
+    content: "\f512";
+  }
+  .Icon--circleActiveStar:before {
+    content: "\f513";
+  }
+  .Icon--circleError:before {
+    content: "\f042";
+  }
+  .Icon--circleMe:before {
+    content: "\f519";
+  }
+  .Icon--circleReply:before {
+    content: "\f511";
+  }
+  .Icon--clock:before {
+    content: "\f177";
+  }
+  .Icon--close:before {
+    content: "\f045";
+  }
+  .Icon--cog:before {
+    content: "\f059";
+  }
+  .Icon--cogWithCaret:before {
+    content: "\f124";
+  }
+  .Icon--collapseTweets:before {
+    content: "\f051";
+  }
+  .Icon--collections:before {
+    content: "\f008";
+  }
+  .Icon--conversation:before {
+    content: "\f157";
+  }
+  .Icon--cover:before {
+    content: "\f163";
+  }
+  .Icon--createMoment:before {
+    content: "\f162";
+  }
+  .Icon--creditCard:before {
+    content: "\f401";
+  }
+  .Icon--crescent:before {
+    content: "\f066";
+  }
+  .Icon--crescentFilled:before {
+    content: "\f567";
+  }
+  .Icon--crop:before {
+    content: "\f190";
+  }
+  .Icon--cvv:before {
+    content: "\f402";
+  }
+  .Icon--delete:before {
+    content: "\f154";
+  }
+  .Icon--deskBell:before {
+    content: "\f090";
+  }
+  .Icon--desktop:before {
+    content: "\f087";
+  }
+  .Icon--device:before {
+    content: "\f085";
+  }
+  .Icon--discover:before {
+    content: "\f052";
+  }
+  /* TODO: rename to Icon--hashtag */
+  .Icon--dm:before {
+    content: "\f054";
+  }
+  .Icon--dmCompose:before {
+    content: "\f035";
+  }
+  .Icon--dots:before {
+    content: "\f150";
+  }
+  .Icon--dotsVertical:before {
+    content: "\f149";
+  }
+  .Icon--download:before {
+    content: "\f186";
+  }
+  .Icon--editPencil:before {
+    content: "\f112";
+  }
+  .Icon--envelope:before {
+    content: "\f187";
+  }
+  .Icon--fail:before {
+    content: "\f000";
+  }
+  /* TODO: DESIGN-993 – create a dedicated fail icon */
+  .Icon--filter:before {
+    content: "\f138";
+  }
+  .Icon--follow:before {
+    content: "\f175";
+  }
+  .Icon--follower:before {
+    content: "\f002";
+  }
+  /* TODO: rename to Icon--followBadge */
+  .Icon--following:before {
+    content: "\f176";
+  }
+  .Icon--geo:before {
+    content: "\f031";
+  }
+  .Icon--geoBadge:before {
+    content: "\f010";
+  }
+  .Icon--gif:before {
+    content: "\f028";
+  }
+  .Icon--gifBadge:before {
+    content: "\f309";
+  }
+  .Icon--grid:before {
+    content: "\f046";
+  }
+  .Icon--handset:before {
+    content: "\f091";
+  }
+  .Icon--heart:before {
+    content: "\f148";
+  }
+  .Icon--heartBadge:before {
+    content: "\f015";
+  }
+  .Icon--home:before {
+    content: "\f053";
+  }
+  .Icon--homeFilled:before {
+    content: "\f553";
+  }
+  .Icon--horizontalBarChart:before {
+    content: "\f048";
+  }
+  .Icon--info:before {
+    content: "\f209";
+  }
+  .Icon--infoFilled:before {
+    content: "\f217";
+  }
+  .Icon--imageCrop:before {
+    content: "\f158";
+  }
+  .Icon--laptop:before {
+    content: "\f084";
+  }
+  .Icon--lifeline:before {
+    content: "\f026";
+  }
+  .Icon--lifelineBadge:before {
+    content: "\f000";
+  }
+  .Icon--lightBulbOn:before {
+    content: "\f066";
+  }
+  .Icon--lightBulbOff:before {
+    content: "\f567";
+  }
+  .Icon--lightning:before {
+    content: "\f160";
+  }
+  .Icon--lightningBadge:before {
+    content: "\f161";
+  }
+  .Icon--lightningFilled:before {
+    content: "\f017";
+  }
+  .Icon--list:before {
+    content: "\f094";
+  }
+  .Icon--listBadge:before {
+    content: "\f012";
+  }
+  .Icon--logo:before {
+    content: "\f179";
+  }
+  /* TODO: combine with Icon--bird */
+  .Icon--magicrecs:before {
+    content: "\f014";
+  }
+  .Icon--markAllRead:before {
+    content: "\f036";
+  }
+  .Icon--me:before {
+    content: "\f056";
+  }
+  /* TODO: rename to Icon--profile */
+  .Icon--meFilled:before {
+    content: "\f002";
+  }
+  /* TODO: rename to Icon--profileFilled */
+  .Icon--media:before {
+    content: "\f109";
+  }
+  .Icon--mediaCollapse:before {
+    content: "\f335";
+  }
+  .Icon--mediaDocking:before {
+    content: "\f336";
+  }
+  .Icon--mediaExpand:before {
+    content: "\f334";
+  }
+  .Icon--menu:before {
+    content: "\f093";
+  }
+  .Icon--message:before {
+    content: "\f054";
+  }
+  /* TODO: combine with Icon--dm */
+  .Icon--moderator:before {
+    content: "\f089";
+  }
+  .Icon--muted:before {
+    content: "\f101";
+  }
+  .Icon--newsBadge:before {
+    content: "\f009";
+  }
+  .Icon--notifications:before {
+    content: "\f055";
+  }
+  .Icon--notificationsFilled:before {
+    content: "\f019";
+  }
+  .Icon--notificationsDisabled:before {
+    content: "\f037";
+  }
+  .Icon--paintbrush:before {
+    content: "\f159";
+  }
+  .Icon--pause:before {
+    content: "\f302";
+  }
+  .Icon--periscopeBadge:before {
+    content: "\f320";
+  }
+  .Icon--person:before {
+    content: "\f056";
+  }
+  .Icon--people:before {
+    content: "\f178";
+  }
+  .Icon--pinned:before {
+    content: "\f003";
+  }
+  .Icon--play:before {
+    content: "\f301";
+  }
+  .Icon--poll:before {
+    content: "\f034";
+  }
+  .Icon--pollBar:before {
+    content: "\f199";
+  }
+  .Icon--promoted:before {
+    content: "\f004";
+  }
+  .Icon--promotedStroked:before {
+    content: "\f504";
+  }
+  .Icon--promotedTrend:before {
+    content: "\f011";
+  }
+  .Icon--promoteMode:before {
+    content: "\f409";
+  }
+  .Icon--protected:before {
+    content: "\f096";
+  }
+  .Icon--refresh:before {
+    content: "\f189";
+  }
+  .Icon--reply:before {
+    content: "\f151";
+  }
+  .Icon--report:before {
+    content: "\e609";
+  }
+  .Icon--retweet:before {
+    content: "\f152";
+  }
+  .Icon--retweeted:before {
+    content: "\f006";
+  }
+  /* TODO: rename to Icon--retweetBadge */
+  .Icon--search:before {
+    content: "\f058";
+  }
+  .Icon--share:before {
+    content: "\f185";
+  }
+  .Icon--smileRating1:before {
+    content: "\f430";
+  }
+  .Icon--smileRating1Fill:before {
+    content: "\f431";
+  }
+  .Icon--smileRating2:before {
+    content: "\f432";
+  }
+  .Icon--smileRating2Fill:before {
+    content: "\f433";
+  }
+  .Icon--smileRating3:before {
+    content: "\f434";
+  }
+  .Icon--smileRating3Fill:before {
+    content: "\f435";
+  }
+  .Icon--smileRating4:before {
+    content: "\f436";
+  }
+  .Icon--smileRating4Fill:before {
+    content: "\f437";
+  }
+  .Icon--smileRating5:before {
+    content: "\f438";
+  }
+  .Icon--smileRating5Fill:before {
+    content: "\f439";
+  }
+  .Icon--smiley:before {
+    content: "\f033";
+  }
+  .Icon--snapReelBadge:before {
+    content: "\f312";
+  }
+  .Icon--soundOff:before {
+    content: "\f306";
+  }
+  .Icon--soundOn:before {
+    content: "\f305";
+  }
+  .Icon--stickerBadge:before {
+    content: "\f047";
+  }
+  .Icon--summary:before {
+    content: "\f156";
+  }
+  .Icon--tablet:before {
+    content: "\f086";
+  }
+  .Icon--top:before {
+    content: "\f007";
+  }
+  .Icon--translator:before {
+    content: "\f089";
+  }
+  .Icon--truck:before {
+    content: "\f400";
+  }
+  .Icon--tweet:before {
+    content: "\f029";
+  }
+  /* TODO: rename to Icon--compose */
+  .Icon--unfollow:before {
+    content: "\f097";
+  }
+  .Icon--unmuted:before {
+    content: "\f101";
+  }
+  .Icon--url:before {
+    content: "\f098";
+  }
+  .Icon--vineBadge:before {
+    content: "\f310";
+  }
+  .Icon--visibilityFollowers:before {
+    content: "\f103";
+  }
+  .Icon--visibilityFollowing:before {
+    content: "\f105";
+  }
+  .Icon--visibilityMutual:before {
+    content: "\f104";
+  }
+  .Icon--visibilityOnlyMe:before {
+    content: "\f106";
+  }
+  .Icon--visibilityPublic:before {
+    content: "\f102";
+  }
+  .Icon--warning:before {
+    content: "\f182";
+  }
+  /**
+   * Stacked verified icon
+   *
+   * The :before pseudo-element is the white fill that ensures the tick mark
+   * remains white. The :after pseudo-element is the actual verified icon. The
+   * reason why the white fill is positioned absolutely is because we want the
+   * verified icon to be what gives the element width and height, not the fill.
+   */
+  .Icon--verified:before {
+    content: "\f032";
+    font-size: 0.6em;
+    left: 20%;
+    line-height: 1;
+    position: absolute;
+    top: 25%;
+  }
+  .Icon--verified:after {
+    content: "\f099";
+    line-height: 1;
+    position: relative;
+  }
+  /**
+   * Stacked play icon
+   *
+   * The :before pseudo-element is the background fill color of the button. The
+   * :after pseudo-element is the play icon with ring. The reason why the
+   * background fill is positioned absolutely is because we want the play icon to
+   * be what gives the element width and height.
+   */
+  .Icon--playButton:before {
+    content: "\f032";
+    line-height: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.8;
+  }
+  .Icon--playButton:after {
+    content: "\f040";
+    line-height: 1;
+    position: relative;
+  }
+  /**
+   * 1. The protected glyph is a bit small relative to the verified glyph. Resize
+   *    so that they take up the same visual space when placed next to each other.
+   */
+  .Icon--protected {
+    font-size: 1.1em;
+    /* 1 */
+    padding-left: 1px;
+    /* 1 */
+  }
+  /* Colors */
+  .Icon--fail {
+    color: var(--tw-color-red-500-experimental);
+  }
+  .Icon--follower,
+  .Icon--magicrecs,
+  .Icon--colorLightning,
+  .Icon--colorFollower {
+    color: #1D9BF0;
+  }
+  .Icon--lifelineBadge {
+    color: var(--tw-color-orange-600-experimental);
+  }
+  .Icon--listBadge:before {
+    color: var(--tw-color-gray-700-experimental);
+  }
+  .Icon--muted {
+    color: var(--tw-color-red-500-experimental);
+  }
+  .Icon--promoted {
+    color: var(--tw-color-gray-700-experimental);
+  }
+  .Icon--promotedTrend {
+    color: var(--tw-color-yellow-500-experimental);
+  }
+  .Icon--protected {
+    color: #0F1419;
+  }
+  .Icon--retweeted,
+  .Icon--colorRetweeted {
+    color: var(--tw-color-green-500-experimental);
+  }
+  .Icon--smiley {
+    color: var(--tw-color-gray-300-experimental);
+  }
+  .Icon--top {
+    color: #1D9BF0;
+  }
+  .Icon--translator {
+    color: #1D9BF0;
+  }
+  .Icon--moderator {
+    color: var(--tw-color-yellow-500-experimental);
+  }
+  .Icon--unmuted {
+    color: var(--tw-color-gray-200-experimental);
+  }
+  .Icon--verified {
+    color: #1D9BF0;
+  }
+  .Icon--verified:before {
+    color: white;
+  }
+  .Icon--circleActiveMe,
+  .Icon--circleActiveBird {
+    color: #1D9BF0;
+  }
+  .Icon--colorHeart,
+  .Icon--circleActiveHeart,
+  .Icon--heartBadge {
+    color: var(--tw-color-red-500-experimental);
+  }
+  .Icon--circleActiveRetweet {
+    color: var(--tw-color-green-500-experimental);
+  }
+  .Icon--circleActiveList {
+    color: var(--tw-color-gray-700-experimental);
+  }
+  .Icon--playButton {
+    color: #1D9BF0;
+  }
+  .Icon--playButton:after {
+    color: white;
+  }
+  .Icon--white {
+    color: white;
+  }
+  /**
+   * Inverted Color Scheme
+   *
+   * Icon colors for placement on dark backgrounds
+   */
+  .Icon--inverted.Icon--verified {
+    color: white;
+  }
+  .Icon--inverted.Icon--verified:before {
+    color: #0F1419;
+  }
+  
