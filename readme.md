@@ -2,12 +2,12 @@
 
 I am dashing off to Thanksgiving events so...
 
-Download your Twitter Archive
-Drop it into teh same folder as teh PHP file
-Run the PHP script... (thats a process!)
-Manually copy over the 'tweets_media' foler from archive to the 'public' directory. (broken)
-Delete 'build-public-archive.php'
-Everything in 'public' directory should be good to go/host.
+- Download your Twitter Archive
+- Drop it into teh same folder as teh PHP file
+- Run the PHP script... (thats a process!)
+- Manually copy over the 'tweets_media' foler from archive to the 'public' directory. (broken)
+- Delete 'build-public-archive.php'
+- Everything in 'public' directory should be good to go/host.
 
 More details and additions to come.
 
