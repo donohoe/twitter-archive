@@ -161,7 +161,7 @@ var app = {
 	getPhoto: function(tweet, entity){
 		var url = entity['url'];
 		var image_file = tweet['id_str'] + '-' + entity['media_url_https'].split("/").pop();
-		var image_path = '../data/tweets_media/' + image_file;
+		var image_path = './tweets_media/' + image_file;
 		var media = '<div class="Tweet-photoContainer"><img src="' + image_path + '"></div>';
 		var text = tweet['full_text'].replace(url, media);
 		console.log('image_file', image_file );
@@ -171,7 +171,7 @@ var app = {
 	getVideo: function(tweet, entity){
 		var url = entity['url'];
 		var image_file = tweet['id_str'] + '-' + entity['media_url_https'].split("/").pop().replace('.jpg', '.mp4');
-		var image_path = '../data/tweets_media/' + image_file;
+		var image_path = './tweets_media/' + image_file;
 		var media = [
 			'<div class="Tweet-videoContainer">',
 				'<video controls loop>',
