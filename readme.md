@@ -16,14 +16,13 @@ Sorry about teh code. Really sorry. Rushed it.
 
 ## Known Issues
 
-Forgot to copy over icon fonts as part of it.
-Terrible instructions.
-Only supports 1 image or video in tweets.
+- Forgot to copy over icon fonts as part of it.
+- Terrible instructions.
+- Only supports 1 image or video in tweets.
 
 ## Future Changes
 
-Links to individiual tweets
-Search
-Non-PHP versions of build script (no reason it must be PHP)
-More tweet formats
-
+- Links to individiual tweets
+- Search
+- Non-PHP versions of build script (no reason it must be PHP)
+- More tweet formats
