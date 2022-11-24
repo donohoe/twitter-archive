@@ -14,3 +14,7 @@ More details and additions to come.
 Sorry about teh code. Really sorry. Rushed it.
 
 
+## Known Issues
+
+Forgot to copy over icon fonts as part of it.
+Terrible instructions.
