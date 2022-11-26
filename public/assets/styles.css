@@ -1,11 +1,11 @@
 /* Font-based icons */
 @font-face {
 	font-family: "edgeicons";
-	src: url(../../assets/fonts/edge-icons-Regular.0e351.eot);
+	src: url(./fonts/edge-icons-Regular.0e351.eot);
 	/* IE9 Compat Modes */
-	src: url(../../assets/fonts/edge-icons-Regular.0e351.eot?#iefix) format("embedded-opentype"),
-	url(../../assets/fonts/edge-icons-Regular.d0526.woff) format("woff"),
-	url(../../assets/fonts/edge-icons-Regular.86a61.ttf) format("truetype");
+	src: url(./fonts/edge-icons-Regular.0e351.eot?#iefix) format("embedded-opentype"),
+	url(./fonts/edge-icons-Regular.d0526.woff) format("woff"),
+	url(./fonts/edge-icons-Regular.86a61.ttf) format("truetype");
 }
 
 :root {
@@ -395,7 +395,7 @@ body {
 }
 
 #content {
-	max-width: 600px;
+	max-width: 690px;
 	margin: 0px auto;
 	min-height: 101vh;
 	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -452,7 +452,7 @@ header {
 
 #profile_info {
 	flex: 1 1 calc(100% - 140px);
-	padding: 10px 0px 10px 10px;
+	padding: 10px;
 	background-color: white;
 	border-radius: 0 4px;
 }
@@ -464,11 +464,16 @@ header {
 
 #profile span.icon-location {
 	width: 18px;
-	margin: 0px 3px 0px 0px;
+	margin: 0;
 }
 
 #profile span.icon-location svg {
 	margin-bottom: -4px;
+}
+
+.tweet-group {
+    max-width: 596px;
+    margin: 0 auto;
 }
 
 .item {
@@ -694,4 +699,3 @@ a svg {
 			padding: 10px 15px;
 		}
 }
-
