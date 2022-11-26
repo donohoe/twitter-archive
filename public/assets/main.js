@@ -37,8 +37,17 @@ var app = {
 		this.profile_img = 'assets/' + profile.avatarMediaUrl;
 		var profileEl = document.getElementById('profile');
 		profileEl.querySelector('h2').innerText = profile.displayName;
-		profileEl.querySelector('span.bio').innerText = profile.description.bio;
+		profileEl.querySelector('h3').innerText = '@' + profile.username;
 		profileEl.querySelector('#profile_location').innerText = profile.description.location;
+
+		var bio = profile.description.bio.replaceAll('@', '');
+		var re = /(?:^|\W)@(\w+)(?!\w)/g, match, matches = [];
+		while (match = re.exec( profile.description.bio )) {
+			matches.push(match[1]);
+			bio = bio.replace( match[1], '<a href="https://twitter.com/' + match[1] + '" target="_blank">@' + match[1] + '</a>' );
+		}
+
+		profileEl.querySelector('span.bio').innerHTML = bio;
 	},
 
 	load: function(){
@@ -61,6 +70,7 @@ var app = {
 
 		var el = document.createElement('div');
 		el.id = 'tweet-group-' + this.index;
+		el.className = 'tweet-group';
 		el.setAttribute('data-source', this.sources[ this.index ]);
 		document.getElementById('content').appendChild(el);
 		el.innerHTML = html;
@@ -164,7 +174,6 @@ var app = {
 		var image_path = './tweets_media/' + image_file;
 		var media = '<div class="Tweet-photoContainer"><img src="' + image_path + '"></div>';
 		var text = tweet['full_text'].replace(url, media);
-		console.log('image_file', image_file );
 		return text;
 	},
 
@@ -180,7 +189,6 @@ var app = {
 			'</div>'
 		].join('');
 		var text = tweet['full_text'].replace(url, media);
-		console.log('video_file', image_file );
 		return text;
 	}
 };
