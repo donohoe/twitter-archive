@@ -23,7 +23,8 @@ There are a number of assumptions made in this gudie.
   - If you have PHP installed, using Terminal, you can navigate to the folder
   - Enter `php -S localhost:5050`
   - Run the script at http://localhost:5050/build-public-archive.php
-- Copy (opr move) `data/twwets_media` to `public/tweets_media`
+- Copy (or move) `data/tweets_media` to `public/tweets_media`
+- Copy (or move) `assets/fonts` to `public/assets/fonts`
 
 ## Upload
 
