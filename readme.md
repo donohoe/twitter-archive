@@ -28,7 +28,7 @@ There are a number of assumptions made in this gudie.
 
 ## Upload
 
-Everything within the `public` folder is intended to be made public. Depending on the amount of images and videos this could take a awhile. Its worth updating any folder or file permissions before uploading. `tweets_media` folder should be `644`, and the files `644`.
+Everything within the `public` folder is intended to be made public. Depending on the amount of images and videos this could take a awhile. Its worth updating any folder or file permissions before uploading. `tweets_media` folder should be `755`, and the files `644`.
 
 Do not upload the 'build-public-archive.php' script. Delete it.
 
