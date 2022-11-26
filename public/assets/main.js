@@ -172,7 +172,7 @@ var app = {
 		var url = entity['url'];
 		var image_file = tweet['id_str'] + '-' + entity['media_url_https'].split("/").pop();
 		var image_path = './tweets_media/' + image_file;
-		var media = '<div class="Tweet-photoContainer"><img src="' + image_path + '"></div>';
+		var media = '<div class="Tweet-photoContainer"><img src="' + image_path + '" loading="lazy"></div>';
 		var text = tweet['full_text'].replace(url, media);
 		return text;
 	},
