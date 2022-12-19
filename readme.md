@@ -1,6 +1,6 @@
 # Twitter Archive
 
-WHen you download your Twitter archive you can't easily host it as it contains a lot of private information, from DMs to personal information. The goal os this project is to create a light, fast, and public version of your Twitter archive.
+When you download your Twitter archive you can't easily host it as it contains a lot of private information, from DMs to personal information. The goal of this project is to create a light, fast, and public version of your Twitter archive.
 
 ## Getting started
 
